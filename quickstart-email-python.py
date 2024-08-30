@@ -73,7 +73,9 @@ def send_email():
           "reply_to":[{"name": "Name", "email": os.environ.get("EMAIL")}],
           "to":[{"name": recipient_name, "email": recipient_email}]}
       message = nylas.messages.send(session["grant_id"], request_body = email_body).data
-      return jsonify(message)
+      # return jsonify(message)
+      # Return the form with a success message
+      return render_template('send_email.html', success=True)
      except Exception as e:
             return f'Error: {e}', 500
   else:
