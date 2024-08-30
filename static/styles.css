@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+strong {
+    font-weight: 500;
+    color: #555;
+}
+
+.email-subject {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+.email-from,
+.email-date,
+.email-snippet {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.email-from {
+    margin-top: 10px;
+}
+
+.email-date {
+    margin-top: 5px;
+}
+
+.email-snippet {
+    margin-top: 10px;
+    color: #888;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #888;
+}

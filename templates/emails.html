@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Emails</title>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Recent Emails</h1>
+        <ul>
+            {% for email in emails %}
+            <li>
+                <div class="email-from"><strong>From:</strong> {{ email['from'][0]['name'] }} ({{ email['from'][0]['email'] }})</div>
+                <div class="email-subject"><strong>Subject:</strong> {{ email['subject'] }}</div>
+                <div class="email-date"><strong>Date:</strong> {{ email['date'] | format_datetime }}</div>
+                <div class="email-snippet"><strong>Snippet:</strong> {{ email['snippet'] }}</div>
+            </li>
+            <hr>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        Powered by Nylas
+    </footer>
+</body>
+</html>
