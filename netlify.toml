@@ -1,0 +1,4 @@
+[template.environment]
+  CLIENT_ID = "change me for your client id"
+  API_KEY = "change me for your api key"
+  NYLAS_API_URI = "change me too"
