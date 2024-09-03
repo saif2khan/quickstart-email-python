@@ -26,8 +26,3 @@ EMAIL="<RECIPIENT_EMAIL_ADDRESS_HERE>"
 ```
 
 5. Open your browser and go to `http://localhost:5000/nylas/auth` and log in and end user account. Enjoy!
-
-```text
-http://localhost:5000/nylas/recent-emails
-http://localhost:5000/nylas/send-email
-```
